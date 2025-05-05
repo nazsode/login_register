@@ -12,9 +12,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      // bebem çok kombinasyon denedim bu çalıştı mı? direkt port yazmadım 5000 yazdım
       const response = await axiosInstance.post("/auth/login", {
-        //bebem bura login tarayıcıda registerdayız ikisini de değiştiriyom ki
         username,
         password,
       });
